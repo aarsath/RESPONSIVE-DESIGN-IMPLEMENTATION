@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Haven | Authentic Indian Cuisine</title>
+    <link rel="stylesheet" href="attraction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span>Spice</span>Haven
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#special">Specials</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#special">Specials</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Experience the <span>True Taste</span> of India</h1>
+            <p>Authentic spices, traditional recipes, and unforgettable flavors.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn primary-btn">Explore Menu</a>
+                <a href="#contact" class="btn secondary-btn">Book a Table</a>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="special-dishes" id="special">
+        <div class="container">
+            <h2 class="section-title">Today's <span>Special</span></h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Butter Chicken">
+                    <div class="dish-info">
+                        <h3>Butter Chicken</h3>
+                        <p>Tender chicken in rich tomato & butter gravy.</p>
+                        <span class="price">₹349</span>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Biryani">
+                    <div class="dish-info">
+                        <h3>Hyderabadi Biryani</h3>
+                        <p>Fragrant basmati rice with succulent meat.</p>
+                        <span class="price">₹299</span>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Masala Dosa">
+                    <div class="dish-info">
+                        <h3>Masala Dosa</h3>
+                        <p>Crispy rice crepe with spiced potato filling.</p>
+                        <span class="price">₹199</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our <span>Menu</span></h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="starters">Starters</button>
+                <button class="tab-btn" data-category="mains">Main Course</button>
+                <button class="tab-btn" data-category="breads">Breads</button>
+                <button class="tab-btn" data-category="desserts">Desserts</button>
+            </div>
+            <div class="menu-items">
+                <!-- Starters -->
+                <div class="menu-category active" id="starters">
+                    <div class="menu-item">
+                        <h3>Paneer Tikka</h3>
+                        <p>Cottage cheese marinated in spices & grilled.</p>
+                        <span class="price">₹249</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Chicken 65</h3>
+                        <p>Spicy deep-fried chicken bites.</p>
+                        <span class="price">₹279</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Samosa</h3>
+                        <p>Crispy pastry filled with spiced potatoes.</p>
+                        <span class="price">₹50</span>
+                    </div>
+                </div>
+                <!-- Mains (hidden by default) -->
+                <div class="menu-category" id="mains">
+                    <div class="menu-item">
+                        <h3>Dal Makhani</h3>
+                        <p>Creamy black lentils slow-cooked with butter.</p>
+                        <span class="price">₹199</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Palak Paneer</h3>
+                        <p>Spinach curry with soft cottage cheese.</p>
+                        <span class="price">₹229</span>
+                    </div>
+                </div>
+                <!-- Breads (hidden by default) -->
+                <div class="menu-category" id="breads">
+                    <div class="menu-item">
+                        <h3>Butter Naan</h3>
+                        <p>Soft leavened bread brushed with butter.</p>
+                        <span class="price">₹59</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Rumali Roti</h3>
+                        <p>Thin, handkerchief-like bread.</p>
+                        <span class="price">₹49</span>
+                    </div>
+                </div>
+                <!-- Desserts (hidden by default) -->
+                <div class="menu-category" id="desserts">
+                    <div class="menu-item">
+                        <h3>Gulab Jamun</h3>
+                        <p>Deep-fried milk balls in sugar syrup.</p>
+                        <span class="price">₹119</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Rasmalai</h3>
+                        <p>Soft cheese patties in sweetened milk.</p>
+                        <span class="price">₹129</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Our <span>Story</span></h2>
+                <p>Founded in 2010, <strong>Spice Haven</strong> brings authentic Indian flavors to your plate. Our chefs use traditional recipes passed down through generations, with the freshest ingredients and aromatic spices.</p>
+                <p>We take pride in offering a dining experience that reflects India's diverse culinary heritage—from the rich curries of the North to the tangy flavors of the South.</p>
+                <a href="#contact" class="btn primary-btn">Visit Us</a>
+            </div>
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Indian Chef">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our <span>Customers</span> Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>"The best Butter Chicken I’ve ever had! The flavors are just perfect."</p>
+                    <h4>- Rajesh K.</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Authentic Hyderabadi Biryani that reminds me of home. Highly recommended!"</p>
+                    <h4>- Priya M.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Find <span>Us</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Abcd Street,nagapattinam 611106</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+91 00000 00000</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@spicehaven.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Mon-Sun: 11:00 AM - 11:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Book a Table</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="number" placeholder="Number of Guests" min="1" required>
+                        <textarea placeholder="Special Requests"></textarea>
+                        <button type="submit" class="btn primary-btn">Reserve Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Spice Haven</h3>
+                    <p>Bringing authentic Indian flavors to your table since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive offers!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn secondary-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> Spice Haven. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="worker.js"></script>
+</body>
+</html>
